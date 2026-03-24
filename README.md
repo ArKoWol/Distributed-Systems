@@ -16,7 +16,7 @@ Main script:
 From terminal:
 
 ```bash
-cd "/Users/arkow/VGTU /BDS/hw-1"
+cd "path to this directory"
 python3 --version
 ```
 
