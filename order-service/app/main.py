@@ -86,7 +86,7 @@ async def create_order(order_data: OrderCreate) -> OrderResponse:
         status="created",
     )
 
-    with Session(engine) as session:
+    with Session(engine, expire_on_commit=False) as session:
         session.add(order)
         session.commit()
 
